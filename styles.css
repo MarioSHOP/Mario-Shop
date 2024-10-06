@@ -1,16 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #ff9800;
-    padding: 20px;
+    background: linear-gradient(135deg, #ff7a18, #ffb700);
+    padding: 40px;
     text-align: center;
     color: #fff;
+    font-size: 2em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -28,7 +30,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -45,46 +47,56 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .category-item, .product-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 15px;
-    padding: 15px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    perspective: 1000px;
 }
 
-.category-item img, .product-item img {
+.category-card, .product-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s ease;
+}
+
+.category-card:hover, .product-card:hover {
+    transform: rotateY(10deg) scale(1.05);
+}
+
+.category-card img, .product-card img {
     width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.category-info, .product-info {
+    padding: 20px;
+    text-align: center;
 }
 
 .buy-button {
-    background-color: #ff9800;
+    background: linear-gradient(135deg, #ff9800, #ff5700);
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .buy-button:hover {
-    background-color: #e68900;
+    background: linear-gradient(135deg, #e67e00, #ff4400);
+    transform: scale(1.1);
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     margin-top: 20px;
 }
