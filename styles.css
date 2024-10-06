@@ -44,14 +44,13 @@ nav ul li a:hover {
 }
 
 .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     padding: 40px 20px;
 }
 
 .product-item {
-    margin: 20px;
     transition: transform 0.3s ease;
 }
 
