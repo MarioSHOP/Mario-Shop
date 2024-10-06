@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Tarts - Boutique en Ligne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pop-Tarts - Découvrez nos Saveurs !</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="poptarts.html">Pop-Tarts</a></li>
+            <!-- Ajoutez ici d'autres liens vers des catégories futures -->
+        </ul>
+    </nav>
+
+    <main>
+        <section class="product-list">
+            <!-- Mega Pack -->
+            <div class="product-item">
+                <img src="https://i.imgur.com/JXT5Asm.jpeg" alt="Mega Pack Pop-Tarts">
+                <h2>Mega Pack Pop-Tarts</h2>
+                <p>Contient : 24 Frosted Strawberry, 12 Frosted Cherry, 12 Frosted Blueberry</p>
+                <p>Prix : $29.99</p>
+                <button class="buy-button" data-snippet-id="mega-pack">Ajouter au panier</button>
+            </div>
+
+            <!-- Autres produits Pop-Tarts -->
+            <div class="product-item">
+                <img src="https://i.imgur.com/Ssx1hDP.jpeg" alt="Frosted Banana Bread">
+                <h2>Frosted Banana Bread</h2>
+                <p>Délicieuse saveur de pain à la banane avec glaçage.</p>
+                <p>Prix : $4.99</p>
+                <button class="buy-button" data-snippet-id="banana-bread">Ajouter au panier</button>
+            </div>
+
+            <!-- Ajoutez ici d'autres produits Pop-Tarts comme décrit précédemment -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Boutique en Ligne. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Snipcart integration script -->
+    <script src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="VOTRE_CLE_API_SNIPCART"></div>
+</body>
+
+</html>
